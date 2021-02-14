@@ -1,5 +1,7 @@
 # US COVID-19 Predictions data
 
+![Status badge](https://github.com/okyanusoz/covid19-us-predictions-data/workflows/Update%20data/badge.svg)
+
 This repo contains COVID-19 predictions data in the US.
 
 There are two data files:
