@@ -8,4 +8,4 @@ There are two data files:
 
 COVID-19 cases data provided by JHU CSSE. See LICENSE for more details.
 
-*Update Frequency: The job starts at 15:00 UTC(to make sure data is up to date)*
+*Update Frequency: The job starts at 15:00 UTC(to make sure data is up to date), and finishes in a few minutes*
