@@ -24,10 +24,10 @@ jobs:
         run: docker build -t predictor .
         working-directory: predictor
       - name: Download US data
-        run: docker run -it --rm predictor -v $PWD:/app "python tools/download-us-data.py" && docker run -it --rm predictor -v $PWD:/app "python tools/date-sort.py US.csv US.csv"
+        run: docker run --rm predictor -v $PWD:/app "python tools/download-us-data.py" && docker run --rm predictor -v $PWD:/app "python tools/date-sort.py US.csv US.csv"
         working-directory: predictor
       - name: Create data.json
-        run: docker run -it --rm predictor -v $PWD:/app "python tools/create_data_json.py US.csv"
+        run: docker run --rm predictor -v $PWD:/app "python tools/create_data_json.py US.csv"
         working-directory: predictor
       - name: Copy US.csv and data.json to data repo
         run: cp predictor/US.csv data/dataset.csv && cp predictor/data.json data
