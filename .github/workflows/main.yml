@@ -24,7 +24,7 @@ jobs:
         run: docker build -t predictor .
         working-directory: predictor
       - name: Download US data
-        run: docker run --rm -v $PWD:/app predictor python tools/download-us-data.py && docker run --rm -v $PWD:/app predictor python tools/date-sort.py US.csv US.csv
+        run: docker run --rm -v $PWD:/app predictor python tools/download_us_data.py && docker run --rm -v $PWD:/app predictor python tools/date_sort.py US.csv US.csv
         working-directory: predictor
       - name: Create data.json
         run: docker run --rm predictor -v $PWD:/app python tools/create_data_json.py US.csv
