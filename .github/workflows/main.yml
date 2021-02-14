@@ -1,1 +1,42 @@
+name: Update data
+on:
+  schedule:
+    - cron: 0 15 * * *
+  workflow_dispatch:
 
+jobs:
+  update:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Clone predictor repo
+        uses: actions/checkout@v2
+        with:
+          repository: okyanusoz/covid19-cases-predictor
+          path: predictor
+      - name: Clone data repo
+        uses: actions/checkout@v2
+        with:
+          path: data-repo
+      - name: Setup Python 3.9
+        uses: actions/setup-python@2.2.1
+        with:
+          python-version: 3.9
+      - name: Run pip install
+        run: pip install -r requirements.txt
+        working-directory: predictor
+      - name: Download US data
+        run: python tools/download-us-data.py && python tools/date-sort.py US.csv US.csv
+        working-directory: predictor
+      - name: Create data.json
+        run: python tools/create_data_json.py US.csv
+        working-directory: predictor
+      - name: Copy US.csv and data.json to data repo
+        run: cp predictor/US.csv data/dataset.csv && cp predictor/data.json data
+      - name: Commit
+        uses: EndBug/add-and-commit@v7.0.0
+        with:
+          cwd: data-repo
+          message: Automated update
