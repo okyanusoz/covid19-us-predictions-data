@@ -1,6 +1,10 @@
 # US COVID-19 Predictions data
 
-This repo contains COVID-19 predictions data in the US(in data.json).
+This repo contains COVID-19 predictions data in the US.
+
+There are two data files:
+- data.json: predicted and current cases. See https://github.com/okyanusoz/covid19-cases-predictor/blob/main/data.schema.json for the schema.
+- dataset.csv: cases dataset, provided by JHU CSSE
 
 COVID-19 cases data provided by JHU CSSE. See LICENSE for more details.
 
