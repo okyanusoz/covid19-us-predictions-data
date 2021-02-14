@@ -1,6 +1,6 @@
-# covid19-us-predictions-data
+# US COVID-19 Predictions data
 
-This repo contains COVID-19 predictions data(in data.json).
+This repo contains COVID-19 predictions data in the US(in data.json).
 
 COVID-19 cases data provided by JHU CSSE. See LICENSE for more details.
 
