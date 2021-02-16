@@ -36,3 +36,6 @@ jobs:
         with:
           cwd: data-repo
           message: Automated update
+          author_name: automated-updates
+          author_email: automated-updates@covid19-predictions-data.local
+
