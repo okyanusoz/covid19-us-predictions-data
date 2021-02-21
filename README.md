@@ -4,7 +4,7 @@
 
 This repo contains COVID-19 predictions data in the US.
 
-**Disclaimer**
+### Disclaimer
 
 While this repo predicts COVID-19, deaths and especially cases are still random. USE THIS DATA AT YOUR OWN RISK!
 
@@ -14,7 +14,7 @@ There are two data files:
 
 COVID-19 cases data provided by JHU CSSE. See LICENSE for more details.
 
-## Archived predictions
+### Archived predictions
 
 Archived predictions are also available through Git commit history. Here are the URLs you can use to browse the history of data files:
 - data.json: https://github.com/okyanusoz/covid19-us-predictions-data/commits/main/data.json
