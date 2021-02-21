@@ -10,4 +10,15 @@ There are two data files:
 
 COVID-19 cases data provided by JHU CSSE. See LICENSE for more details.
 
-*Update Frequency: The job starts at around 12:00 UTC(to make sure data is up to date), and should finish in a few minutes*
+## Archived predictions
+
+Archived predictions are also available through Git commit history. Here are the URLs you can use to browse the history of data files:
+- data.json: https://github.com/okyanusoz/covid19-us-predictions-data/commits/main/data.json
+- dataset.csv https://github.com/okyanusoz/covid19-us-predictions-data/commits/main/dataset.csv
+
+You can also use GitHub's API to query commits of these files.
+
+### Update Frequency
+The job starts at around 12:00 UTC(to make sure data is up to date), and should finish in a few minutes
+
+**NOTE:** Please **DO NOT** send pull requests to data.json or dataset.csv, they're automatically updated.
