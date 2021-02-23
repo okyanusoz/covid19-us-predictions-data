@@ -23,6 +23,6 @@ Archived predictions are also available through Git commit history. Here are the
 You can also use GitHub's API to query commits of these files.
 
 ### Update Frequency
-The job starts at around 12:00 UTC(to make sure data is up to date), and should finish in a few minutes
+The job starts at around 9:10 UTC(to make sure data is up to date), and should finish in a few minutes
 
 **NOTE:** Please **DO NOT** send pull requests to data.json or dataset.csv, they're automatically updated.
