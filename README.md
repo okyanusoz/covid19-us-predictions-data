@@ -8,11 +8,13 @@ This repo contains COVID-19 predictions in the US.
 
 While this repo predicts COVID-19, deaths and especially cases are still random. USE THIS DATA AT YOUR OWN RISK!
 
+The main focus of this data is to predict deaths, not cases. Therefore we recommend focusing on deaths. Also, death predictions are much more accurate than case predictions.
+
 There are two data files:
-- data.json: predicted and current cases. See https://github.com/okyanusoz/covid19-cases-predictor/blob/main/data.schema.json for the schema.
+- data.json: predicted and current cases and deaths. See https://github.com/okyanusoz/covid19-cases-predictor/blob/main/data.schema.json for the schema.
 - dataset.csv: cases dataset, contains cases and deaths, data provided by JHU CSSE
 
-COVID-19 cases data provided by JHU CSSE. See LICENSE for more details.
+COVID-19 data provided by JHU CSSE. See LICENSE for more details.
 
 ### Archived predictions
 
