@@ -2,7 +2,7 @@
 
 ![Status badge](https://github.com/okyanusoz/covid19-us-predictions-data/workflows/Update%20data/badge.svg)
 
-This repo contains COVID-19 predictions data in the US.
+This repo contains COVID-19 predictions in the US.
 
 ### Disclaimer
 
