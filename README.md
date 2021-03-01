@@ -27,6 +27,6 @@ You can also use GitHub's API to query commits of these files.
 ### Update Frequency
 The job starts at around 9:10 UTC(to make sure data is up to date), and should finish in a few minutes
 
-We recommend checking for updates at around 10:00 UTC because the job may start late. There is no guarantee on when the jön will start.
+We recommend checking for updates at around 10:00 UTC because the job may start late. There is no guarantee on when the it will start.
 
 **NOTE:** Please **DO NOT** send pull requests to data.json or dataset.csv, they're automatically updated.
