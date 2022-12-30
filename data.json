@@ -1,12 +1,12 @@
 {
     "prediction": {
         "date": "2022-12-06",
-        "cases": 99103997,
-        "deaths": 1082327
+        "cases": 99124617,
+        "deaths": 1082350
     },
     "current": {
         "date": "2022-12-05",
-        "cases": 99038271,
-        "deaths": 1081977
+        "cases": 99058555,
+        "deaths": 1082000
     }
 }
